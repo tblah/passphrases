@@ -17,4 +17,5 @@ set zrange[1:1000]
 set view 38, 350
 
 # plot it
-splot x**y
+f(x,y) = (((x**y)-1)/(y-1))-1
+splot f(x,y)
