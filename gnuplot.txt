@@ -1,0 +1,23 @@
+# draws the graph
+
+# titles
+set title "Passphrase Complexity By Length and Charachter Space
+set xlabel "Charachter Space"
+set ylabel "Passphrase Length"
+set zlabel "Complexity"
+
+# look pretty
+set isosamples 70
+set samples 60
+
+# ranges
+set xrange[1:10]
+set yrange[1:10]
+set zrange[1:1000]
+
+# set veiwing angle
+set view 38, 350
+
+# plot it
+splot x**y
+
